@@ -12,9 +12,11 @@ body{
 }
 .body aside{
     flex: 0.3;
+    max-width: 30%;
 }
 .body main{
     flex: 0.7;
+    max-width: 70%;
 }
 .my-dropdown-toggle::after {
     content: none;
@@ -59,6 +61,7 @@ body{
 .sidebar{
     background-color: var(--bg-primary-blue);
     color: var(--text-color-white);
+    max-height: 100%;
 }
 .main nav li {
     list-style: none;
@@ -78,4 +81,14 @@ body{
 }
 .account-btn{
     background-color: #d5d5d5;
+}
+
+.sidebar-footer{
+    /* padding-right: 10rem; */
+}
+.sidebar-footer img{
+    padding-top: 5rem;
+    padding-right: 5rem;
+    max-width: 350px;
+    /* max-height: 50%; */
 }
