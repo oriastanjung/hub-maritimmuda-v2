@@ -1,0 +1,76 @@
+:root{
+    --bg-grey-body : #f4f4f4;
+    --bg-primary-blue : #3F497F;
+    --bg-primary-blue-light : #4353AA;
+    --text-color-white : #FFFFFF;
+    --text-color-unactive : #8C92B2;
+}
+
+body{
+    background-color: var(--bg-grey-body);
+    font-family: "Quicksand",sans-serif;
+}
+.body aside{
+    flex: 0.3;
+}
+.body main{
+    flex: 0.7;
+}
+.my-dropdown-toggle::after {
+    content: none;
+}
+
+.my-dropdown-toggle img{
+    max-width: 24px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+.logo img{
+    max-width: 80%;
+}
+.body aside .nav-link{
+    color: var(--text-color-unactive) !important;
+    font-weight: bold !important;
+}
+.body aside li a.active{
+    background-color: var(--bg-primary-blue-light) !important;
+    color: var(--text-color-white) !important;
+    border-radius: 8px !important;
+}
+.body aside li a.active img.icon{
+    filter: brightness(0) invert(1);
+}
+.body aside .nav-link:hover{
+    color: var(--text-color-white) !important;
+    border-radius: 8px !important;
+    background-color: var(--bg-primary-blue-light) !important;
+}
+.body aside .nav-link:hover img.icon{
+    filter: brightness(0) invert(1);
+}
+
+
+.sidebar{
+    background-color: var(--bg-primary-blue);
+    color: var(--text-color-white);
+}
+.main nav li {
+    list-style: none;
+}
+.main nav{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.dropdown-menu{
+    font-size: 14px;
+}
+
+.dropdown-menu .dropdown-title a{
+    font-weight: 600 !important;
+}
+.account-btn{
+    background-color: #d5d5d5;
+}
