@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="./styles/custom.css" />
   </head>
   <body>
-    <section class="body mx-auto d-flex">
+    <section class="body mx-auto d-md-flex ">
       <!--SIDEBAR-->
-      <aside class="sidebar pt-4 d-flex flex-column">
+      <aside class="sidebar d-none d-md-flex pt-4 flex-column">
         <div class="d-flex px-4 flex-column">
           <div
             class="logo px-5 d-flex justify-content-center align-items-center"
@@ -93,7 +93,7 @@
       <!--END SIDEBAR-->
 
       <!--Main-->
-      <main class="main flex-grow-1 pt-4 mx-5">
+      <main class="main  flex-grow-1 pt-4 mx-5">
         <nav
           class="navbar navbar-expand-lg d-flex align-items-center flex-grow-1"
         >
@@ -165,6 +165,44 @@
             </li>
           </ul>
         </nav>
+        <div class="d-flex flex-wrap gap-5 mt-5 justify-content-center align-items-center cardContainer">
+          <div class="cardDashboard p-4 d-flex flex-column gap-5">
+            <div class="d-flex flex-column ">
+              <p class="fs-3 cardInfo fw-semibold mb-0">3223</p>
+              <p class="fs-6 fw-semibold cardTitle mb-0">USERS</p>
+            </div>
+            <div class="cardImage mt-3">
+              <img class="icon" src="./assets/icon-card-users.png" alt="">
+            </div>
+          </div>
+          <div class="cardDashboard p-4 d-flex flex-column gap-5">
+            <div class="d-flex flex-column ">
+              <p class="fs-3 cardInfo fw-semibold mb-0">22</p>
+              <p class="fs-6 fw-semibold cardTitle mb-0">EVENTS</p>
+            </div>
+            <div class="cardImage mt-3">
+              <img class="icon" src="./assets/icon-card-event.png" alt="">
+            </div>
+          </div>
+          <div class="cardDashboard p-4 d-flex flex-column gap-5">
+            <div class="d-flex flex-column ">
+              <p class="fs-3 cardInfo fw-semibold mb-0">0</p>
+              <p class="fs-6 fw-semibold cardTitle mb-0">SCHOLARSHIPS</p>
+            </div>
+            <div class="cardImage mt-3">
+              <img class="icon" src="./assets/icon-card-scholarship.png" alt="">
+            </div>
+          </div>
+          <div class="cardDashboard p-4 d-flex flex-column gap-5">
+            <div class="d-flex flex-column ">
+              <p class="fs-3 cardInfo fw-semibold mb-0">0</p>
+              <p class="fs-6 fw-semibold cardTitle mb-0">JOB POST</p>
+            </div>
+            <div class="cardImage mt-3">
+              <img class="icon" src="./assets/icon-card-job.png" alt="">
+            </div>
+          </div>
+        </div>
       </main>
       <!--END MAIN-->
     </section>
