@@ -96,6 +96,23 @@ body {
 .cardImage img.icon {
   max-width: 32px;
 }
+/* #sidebar{
+    left: -200%;
+    display: none;
+    position: fixed;
+    min-height: 100vh !important;
+    z-index: 10;
+    top: 0;
+    transition: all 0.9s ease-in-out;
+}
+
+.showMenu {
+    left: 0 !important;
+    display: block !important;
+
+
+} */
+
 
 .cardDashboard {
   /* background: url('../assets/card-bg.png') no-repeat; */
@@ -127,7 +144,36 @@ body {
 /* // X-Small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
 
+.show{
+    display: block;
+    left: 0 !important;
+}
+
+.closeMenu{
+    display: none;
+}
+.closeMenu img{
+    width: 40px;
+    height: 40px;
+}
 @media (max-width: 576px) { 
+    .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20;
+        right: 30;
+    }
+    
+    .sidebar{
+        /* display: none; */
+        position: fixed ;
+        z-index: 10;
+        top: 0;
+        width: 100%;
+        left: -200%;
+        height: 100vh;
+        transition: all .7s ease-in-out;
+    }
     .main{
         /* background-color: red; */
         padding-bottom: 4rem !important;
@@ -155,13 +201,31 @@ body {
 
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
+@media (min-width: 576px) and (max-width:768px) { 
+    .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20;
+        right: 30;
+    }
+    
+    .sidebar{
+        /* display: none; */
+        position: fixed ;
+        z-index: 10;
+        top: 0;
+        width: 100%;
+        left: -200%;
+        height: 200vh;
+        transition: all .7s ease-in-out;
+    }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-
+    .sidebar{
+        display: flex;
+    }
  }
 
 /* // Large devices (desktops, 992px and up) */
