@@ -118,7 +118,9 @@ body {
     box-shadow: 0px 6px 32px rgba(32, 32, 32, 0.12);
     transition: all 0.2s ease-in-out;
 }
-
+.cardInfo{
+    color: #1F2026;
+}
 .cardTitle{
     color: #515258;
 }
