@@ -121,6 +121,10 @@ body {
 /* // No media query for `xs` since this is the default in Bootstrap */
 
 @media (max-width: 576px) { 
+    .main{
+        /* background-color: red; */
+        padding-bottom: 4rem !important;
+    }
     .cardDashboard{
         height: 10rem;
     }
@@ -136,6 +140,9 @@ body {
     }
     .cardDashboard .cardImage{
         margin-top: 0 !important;
+    }
+    footer {
+        font-size: 14px;
     }
 }
 
