@@ -81,6 +81,8 @@ body {
 
 .dropdown-menu .dropdown-title a {
   font-weight: 600 !important;
+  text-decoration: none;
+  cursor: default;
 }
 .account-btn {
   background-color: #d5d5d5;
@@ -112,6 +114,7 @@ body {
 
 
 } */
+
 
 
 .cardDashboard {
