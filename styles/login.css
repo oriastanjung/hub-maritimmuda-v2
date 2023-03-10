@@ -80,7 +80,7 @@ h1,p,button{
 }
 
 
-.buttonLogin button{
+.buttonLogin button, .buttonLogin a{
     width: 100%;
     border-radius: 30px;
     font-size: 18px;
@@ -94,14 +94,15 @@ h1,p,button{
 .buttonLogin button.btn-login:hover{
     background-color: var(--bg-primary-blue);
 }
-.buttonLogin button.btn-signup{
+.buttonLogin a.btn-signup{
     background-color: white;
     border: 1px solid var(--bg-primary-blue-light);
     color: var(--bg-primary-blue-light);
 }
 
-.buttonLogin button.btn-signup:hover{
-    background-color: var(--bg-primary-blue);
+.buttonLogin a.btn-signup:hover{
+    background-color: white;
+    color: var(--bg-primary-blue);
 }
 
 .icon-login-footer{
