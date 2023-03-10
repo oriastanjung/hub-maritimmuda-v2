@@ -128,7 +128,7 @@ h1,p,button{
     .contentLogin h1{
         font-size: 24px;
     }
-    .buttonLogin button{
+    .buttonLogin button, .buttonLogin a{
         font-size: 14px;
     }
     .forgotPassword a{
