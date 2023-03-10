@@ -36,6 +36,8 @@ h1,p,button{
 }
 
 
+
+
 .cardLogin{
     width: 400px;
     /* border-radius: 24px; */
@@ -119,3 +121,45 @@ h1,p,button{
     font-size: 12px;
     color: #ADADAD;
 }
+
+
+@media (max-width: 576px) {
+    .contentLogin h1{
+        font-size: 24px;
+    }
+    .buttonLogin button{
+        font-size: 14px;
+    }
+    .forgotPassword a{
+        font-size: 14px;
+    }
+    .formLogin div label{
+        font-size: 16px;
+    }
+    .formLogin div input{
+        font-size: 16px;
+    }
+    
+  }
+  
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    
+  }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+  }
+  
+  /* // X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
+  
+  /* // XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+  }
+  

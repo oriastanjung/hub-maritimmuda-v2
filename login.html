@@ -20,17 +20,20 @@
     <link rel="stylesheet" href="./styles/login.css" />
   </head>
   <body>
-    <main class="container mx-auto p-4 d-flex gap-5">
-      <section class="cardLogin">
-        <!-- <img src="./assets/login-card.png" alt="" /> -->
+    <main
+      class="container container-login mx-auto p-4 d-flex flex-column flex-lg-row gap-3 gap-lg-5 align-items-center align-items-lg-start"
+    >
+      <section class="cardLogin d-none d-lg-block"></section>
+      <section class="d-block d-lg-none">
+        <img src="./assets/logo-color.png" style="width: 240px" alt="" />
       </section>
       <section class="p-5 pt-4 contentLogin flex-grow-1">
-        <h1 class="fw-bold">Sign In</h1>
-        <form action="" class="mt-5 formLogin d-flex flex-column">
+        <h1 class="fw-bold text-center text-lg-start">Sign In</h1>
+        <form action="" class="mt-5 formLogin d-flex flex-column container mx-auto">
           <div class="d-flex flex-column gap-2 mb-4">
             <label class="fw-medium"> Email Address </label>
             <input
-              class="w-100 px-4 py-2"
+              class=" px-4 py-2"
               required
               placeholder="example@gmail.com"
               type="email"
@@ -41,7 +44,7 @@
           <div class="d-flex flex-column gap-2 mb-3">
             <label class="fw-medium"> Password </label>
             <input
-              class="w-100 px-4 py-2 shadow-none"
+              class=" px-4 py-2 shadow-none"
               required
               placeholder="******"
               type="password"
@@ -68,14 +71,14 @@
           </div>
         </form>
         <footer class="mt-5 d-flex flex-column gap-2">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex gap-2 align-items-center">
+          <div class="d-flex justify-content-center justify-content-lg-between align-items-center flex-row-reverse flex-lg-row gap-3 gap-lg-0">
+            <div class="d-flex gap-3 align-items-center ">
               <img
                 class="icon-login-footer"
                 src="./assets/icon-rekorOri.png"
                 alt=""
               />
-              <div class="icon-rekorOri">
+              <div class="icon-rekorOri d-none d-lg-block">
                 <p class="fw-semibold mb-0">Rekor Nasional ORI</p>
                 <p class="fw-regular mb-0 rekorOri-text">
                   Platform Digital Jejaring Nasional Pemuda Bidang Kemaritiman
@@ -83,7 +86,7 @@
                 </p>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-3 gap-lg-3">
               <img
                 class="icon-login-footer"
                 src="./assets/icon-login1.png"
@@ -101,7 +104,7 @@
               />
             </div>
           </div>
-          <div class="footer-text">
+          <div class="footer-text text-center mt-lg-1 mt-2">
             <p class="mb-0">
               Copyright ©Maritim Muda Nusantara 2023 Maritim Muda Hub v2.0
             </p>
