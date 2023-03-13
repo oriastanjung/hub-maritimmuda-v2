@@ -71,9 +71,6 @@ header .signupHeader{
     font-size: 16px;
     padding-right: 10rem;
 }
-.formSignup div select option{
-    background-color: red !important;
-}
 
 .haveAccount{
     font-size: 15px;
