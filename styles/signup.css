@@ -1,0 +1,158 @@
+:root {
+    --bg-grey-body: #f4f4f4;
+    --bg-primary-blue: #3f497f;
+    --bg-primary-blue-light: #4353aa;
+    --text-color-white: #ffffff;
+    --text-color-unactive: #8c92b2;
+    --text-primary-black : #34364A;
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  textarea:hover, 
+  input:hover, 
+  /* select:active, */
+  select:focus,
+  /* select:hover, */
+  textarea:active, 
+  input:active, 
+  textarea:focus, 
+  input:focus,
+  button:focus,
+  button:active,
+  button:hover,
+  label:focus,
+  .btn:active,
+  .btn.active
+  {
+      outline:0px !important;
+      -webkit-appearance:none;
+      box-shadow: none !important;
+  }
+
+h1,p,button{
+    color: var(--text-primary-black);
+
+}
+
+.signup-logo img{
+    max-width: 200px;
+    object-fit: cover;
+
+
+}
+
+header .signupHeader{
+    font-size: 30px;
+}
+
+.formSignup div label{
+    font-size: 16px;
+    color: var(--text-primary-black);
+}
+
+.formSignup div input{
+    border-radius: 30px;
+    border: 1px solid #B4B4B4;
+    max-height: 64px;
+    color: var(--text-primary-black);
+    font-weight: 500;
+    font-size: 16px;
+}
+.formSignup div select{
+    border-radius: 30px;
+    border: 1px solid #B4B4B4;
+    max-height: 64px;
+    color: var(--text-primary-black);
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 10rem;
+}
+.formSignup div select option{
+    background-color: red !important;
+}
+
+.haveAccount{
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--bg-primary-blue-light);
+}
+.haveAccount a{
+    margin: 0;
+    color: var(--bg-primary-blue-light);
+
+}
+.btn-signup{
+    background-color: var(--bg-primary-blue-light);
+    border-radius: 30px;
+    color: var(--text-color-white);
+    font-size: 14px;
+
+}
+.btn-signup:hover{
+    background-color: var(--bg-primary-blue);
+    color: var(--text-color-white);
+}
+
+.icon-login-footer{
+    max-width: 42px;
+    object-fit: cover;
+}
+.icon-rekorOri p{
+    font-size: 10px;
+}
+
+.icon-rekorOri p.rekorOri-text{
+    font-size: 9px;
+    width: 180px;
+}
+
+.footer-text p{
+    font-size: 12px;
+    color: #ADADAD;
+}
+
+
+@media (max-width: 576px) {
+    .contentLogin h1{
+        font-size: 24px;
+    }
+    .buttonLogin button, .buttonLogin a{
+        font-size: 14px;
+    }
+    .forgotPassword a{
+        font-size: 14px;
+    }
+    .formSignup div label{
+        font-size: 16px;
+    }
+    .formSignup div input{
+        font-size: 16px;
+    }
+    
+  }
+  
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    
+  }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+  }
+  
+  /* // X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
+  
+  /* // XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+  }
+  
