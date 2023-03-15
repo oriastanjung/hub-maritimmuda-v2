@@ -17,14 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/custom.css" />
+    <link rel="stylesheet" href="./styles/find_member.css" />
   </head>
   <body>
     <section class="body mx-auto d-md-flex">
       <!--SIDEBAR-->
       <aside class="sidebar pt-4 flex-column" id="sidebar">
         <div class="closeMenu" id="closeMenu">
-          <img src="./assets/icon-close.png" alt="">
+          <img src="./assets/icon-close.png" alt="" />
         </div>
         <div class="d-flex px-4 flex-column">
           <div
@@ -35,17 +35,16 @@
           <nav class="flex-grow-1 mt-5 sidebar-nav">
             <ul class="nav d-flex flex-column gap-3">
               <li class="nav-item p-1">
-                <a
-                  class="nav-link d-flex align-items-center gap-2 active"
-                  href="/"
-                  aria-current="page"
-                >
+                <a class="nav-link d-flex align-items-center gap-2" href="/">
                   <img class="icon" src="./assets/icon-dashboard.svg" alt="" />
                   Dashboard</a
                 >
               </li>
               <li class="nav-item p-1">
-                <a class="nav-link d-flex align-items-center gap-2" href="./find_member.html"
+                <a
+                  class="nav-link d-flex align-items-center gap-2 active"
+                  href="./find_member.html"
+                  aria-current="page"
                   ><img
                     class="icon"
                     src="./assets/icon-members.svg"
@@ -78,7 +77,9 @@
                 >
               </li>
               <li class="nav-item p-1">
-                <a class="nav-link d-flex align-items-center gap-2" href="/login.html"
+                <a
+                  class="nav-link d-flex align-items-center gap-2"
+                  href="/login.html"
                   ><img
                     class="icon"
                     src="./assets/icon-logout.svg"
@@ -94,14 +95,18 @@
         </div>
       </aside>
       <!--END SIDEBAR-->
-      
+
       <!--Main-->
       <main class="main flex-grow-1 pt-4 mx-5">
         <nav
           class="navbar navbar-expand-lg d-flex align-items-center flex-grow-1"
         >
           <div class="rounded-circle p-2 my-dropdown-toggle" id="menuIcon">
-            <img class="d-block d-md-none" src="./assets/icon-hamburger.png" alt="" />
+            <img
+              class="d-block d-md-none"
+              src="./assets/icon-hamburger.png"
+              alt=""
+            />
           </div>
           <ul class="d-flex gap-4 mb-0 align-items-center">
             <li class="nav-item dropdown">
@@ -145,7 +150,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown ">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link d-flex justify-content-center align-items-center dropdown-toggle my-dropdown-toggle rounded-circle p-2 account-btn"
                 href="#"
@@ -155,7 +160,7 @@
               >
                 <img src="./assets/icon-account.png" alt="" />
               </a>
-              <ul class="dropdown-menu dropdown-menu-end ">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li class="dropdown-title">
                   <a class="dropdown-item-text" href="#">Account</a>
                 </li>
@@ -168,47 +173,131 @@
             </li>
           </ul>
         </nav>
+        <div class="title-section mt-5 mt-md-0 mb-3">
+          <h2 class="fw-bold fs-4 fs-md-2">Find Member</h2>
+        </div>
         <div
-          class="d-flex flex-wrap gap-5 mt-5 justify-content-center align-items-center cardContainer"
+          class="d-flex flex-wrap justify-content-center gap-3 align-items-center mt-2"
         >
-          <div class="cardDashboard p-4 d-flex flex-column gap-5">
-            <div class="d-flex flex-column">
-              <p class="fs-3 cardInfo fw-semibold mb-0">3223</p>
-              <p class="fs-6 fw-semibold cardTitle mb-0">USERS</p>
+          <div
+            class="input-search px-2 py-1 d-flex justify-content-center gap-2 align-items-center"
+          >
+            <input placeholder="Search" type="text" />
+            <img
+              src="./assets/icon-search.png"
+              alt=""
+              style="cursor: pointer"
+            />
+          </div>
+          <select
+            class="input-select form-select"
+            aria-label="Default select example"
+          >
+            <option value="">Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select
+            class="input-select form-select"
+            aria-label="Default select example"
+          >
+            <option value="">Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div
+          class="card-member-container mt-5 mt-md-0 pt-0 pt-md-5 px-4 px-md-0 d-flex flex-wrap gap-5 justify-content-center align-items-"
+        >
+          <div class="card-member p-3 d-flex flex-column gap-2">
+            <div class="card-head d-flex align-items-center gap-3">
+              <span class="profile">MA</span>
+              <span>
+                <p class="mb-0 fw-semibold name">Muhammad Igo Annanda</p>
+                <p class="mb-0 fw-medium city">Aceh</p>
+              </span>
             </div>
-            <div class="cardImage mt-3">
-              <img class="icon" src="./assets/icon-card-users.png" alt="" />
+            <div class="expertise-text">
+              <p class="mb-0 expertise">
+                Teknik Perkapalan, Sistem Perkapalan Teknik Kelautan, Energi
+                Laut Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nobis placeat dolor, reprehenderit iste inventore cupiditate
+                labore ipsam doloribus adipisci obcaecati, ut numquam voluptates
+                harum quidem dolorum doloremque. Possimus, error animi.
+              </p>
+            </div>
+            <div class="detail-card align-self-end">
+              <a href="#">
+                <img class="icon" src="./assets/icon-arrow-card.png" alt="" />
+              </a>
             </div>
           </div>
-          <div class="cardDashboard p-4 d-flex flex-column gap-5">
-            <div class="d-flex flex-column">
-              <p class="fs-3 cardInfo fw-semibold mb-0">22</p>
-              <p class="fs-6 fw-semibold cardTitle mb-0">EVENTS</p>
+
+          <div class="card-member p-3 d-flex flex-column gap-2">
+            <div class="card-head d-flex align-items-center gap-3">
+              <img class="profile" src="./assets/test0user.jpg" alt="" />
+
+              <span>
+                <p class="mb-0 fw-semibold name">Kaisar Akhie</p>
+                <p class="mb-0 fw-medium city">DKI Jakarta</p>
+              </span>
             </div>
-            <div class="cardImage mt-3">
-              <img class="icon" src="./assets/icon-card-event.png" alt="" />
+            <div class="expertise-text">
+              <p class="mb-0 expertise">
+                Bisnis Kelautan dan Perikanan Manajemen Pesisir Terpadu dan Tata
+                Kelola Laut
+              </p>
+            </div>
+            <div class="detail-card align-self-end">
+              <a href="#">
+                <img class="icon" src="./assets/icon-arrow-card.png" alt="" />
+              </a>
             </div>
           </div>
-          <div class="cardDashboard p-4 d-flex flex-column gap-5">
-            <div class="d-flex flex-column">
-              <p class="fs-3 cardInfo fw-semibold mb-0">0</p>
-              <p class="fs-6 fw-semibold cardTitle mb-0">SCHOLARSHIPS</p>
+
+          <div class="card-member p-3 d-flex flex-column gap-2">
+            <div class="card-head d-flex align-items-center gap-3">
+              <img class="profile" src="./assets/test0user.jpg" alt="" />
+
+              <span>
+                <p class="mb-0 fw-semibold name">Kaisar Akhie</p>
+                <p class="mb-0 fw-medium city">DKI Jakarta</p>
+              </span>
             </div>
-            <div class="cardImage mt-3">
-              <img
-                class="icon"
-                src="./assets/icon-card-scholarship.png"
-                alt=""
-              />
+            <div class="expertise-text">
+              <p class="mb-0 expertise">
+                Bisnis Kelautan dan Perikanan Manajemen Pesisir Terpadu dan Tata
+                Kelola Laut
+              </p>
+            </div>
+            <div class="detail-card align-self-end">
+              <a href="#">
+                <img class="icon" src="./assets/icon-arrow-card.png" alt="" />
+              </a>
             </div>
           </div>
-          <div class="cardDashboard p-4 d-flex flex-column gap-5">
-            <div class="d-flex flex-column">
-              <p class="fs-3 cardInfo fw-semibold mb-0">0</p>
-              <p class="fs-6 fw-semibold cardTitle mb-0">JOB POST</p>
+
+          <div class="card-member p-3 d-flex flex-column gap-2">
+            <div class="card-head d-flex align-items-center gap-3">
+              <img class="profile" src="./assets/test0user.jpg" alt="" />
+
+              <span>
+                <p class="mb-0 fw-semibold name">Kaisar Akhie</p>
+                <p class="mb-0 fw-medium city">DKI Jakarta</p>
+              </span>
             </div>
-            <div class="cardImage mt-3">
-              <img class="icon" src="./assets/icon-card-job.png" alt="" />
+            <div class="expertise-text">
+              <p class="mb-0 expertise">
+                Bisnis Kelautan dan Perikanan Manajemen Pesisir Terpadu dan Tata
+                Kelola Laut
+              </p>
+            </div>
+            <div class="detail-card align-self-end">
+              <a href="#">
+                <img class="icon" src="./assets/icon-arrow-card.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
