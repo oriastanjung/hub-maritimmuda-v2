@@ -113,7 +113,19 @@ h1,p,button{
 .account-btn {
   background-color: #d5d5d5;
 }
+.main {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .sidebar-footer img {
   padding-top: 5rem;
   padding-right: 5rem;
@@ -237,7 +249,24 @@ img.profile {
   width: 14px;
 
 }
+.pagination .box{
+  margin-bottom: 0;
+  border: 1px solid #d9d9d9;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: none;
+  text-decoration: none;
+  color: var(--text-primary-black);
+}
+.pagination a.active{
+  background-color: var(--bg-primary-blue) !important;
+  color: white;
+}
 
+.pagination .box:hover{
+  background-color: var(--bg-primary-blue) !important;
+  color: white;
+}
 @media (max-width: 576px) {
   .logo a {
     display: flex;

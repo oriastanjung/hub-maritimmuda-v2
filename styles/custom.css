@@ -31,6 +31,21 @@ body {
   object-position: center;
   cursor: pointer;
 }
+
+.main {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .logo img {
   max-width: 80%;
 }
