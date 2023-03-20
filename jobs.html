@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
-    <title>Find Member - Maritim Muda Hub</title>
+    <title>Jobs - Maritim Muda Hub</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,7 +17,16 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/find_member.css" />
+    <link rel="stylesheet" href="./styles/jobs.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css"
+    />
   </head>
   <body>
     <section class="body mx-auto d-md-flex">
@@ -42,9 +51,8 @@
               </li>
               <li class="nav-item p-1">
                 <a
-                  class="nav-link d-flex align-items-center gap-2 active"
+                  class="nav-link d-flex align-items-center gap-2"
                   href="./find_member.html"
-                  aria-current="page"
                   ><img
                     class="icon"
                     src="./assets/icon-members.svg"
@@ -53,7 +61,9 @@
                 >
               </li>
               <li class="nav-item p-1">
-                <a class="nav-link d-flex align-items-center gap-2" href="./events.html"
+                <a
+                  class="nav-link d-flex align-items-center gap-2"
+                  href="./events.html"
                   ><img
                     class="icon"
                     src="./assets/icon-event.svg"
@@ -71,7 +81,10 @@
                 >
               </li>
               <li class="nav-item p-1">
-                <a class="nav-link d-flex align-items-center gap-2" href="/jobs.html"
+                <a
+                  class="nav-link d-flex align-items-center gap-2 active"
+                  href="/jobs.html"
+                  aria-current="page"
                   ><img class="icon" src="./assets/icon-job.svg" alt="" />Job
                   Posts</a
                 >
@@ -97,7 +110,7 @@
       <!--END SIDEBAR-->
 
       <!--Main-->
-      <main class="main flex-grow-1 pt-4 mx-5 ">
+      <main class="main flex-grow-1 pt-4 mx-5">
         <nav
           class="navbar navbar-expand-lg d-flex align-items-center flex-grow-1"
         >
@@ -174,145 +187,28 @@
           </ul>
         </nav>
         <div class="title-section mt-5 mt-md-0 mb-3">
-          <h2 class="fw-bold fs-4 fs-md-2">Find Member</h2>
+          <h2 class="fw-bold fs-4 fs-md-2">Jobs</h2>
         </div>
-        <div
-          class="d-flex flex-wrap justify-content-center gap-3 align-items-center mt-2"
-        >
-          <div
-            class="input-search px-2 py-1 d-flex justify-content-center gap-2 align-items-center"
+        <div>
+          <table
+            data-toggle="table"
+            data-url="dataPost.json"
+            data-pagination="true"
+            data-search="true"
           >
-            <input placeholder="Search" type="text" />
-            <img
-              src="./assets/icon-search.png"
-              alt=""
-              style="cursor: pointer"
-            />
-          </div>
-          <select
-            class="input-select form-select"
-            aria-label="Default select example"
-          >
-            <option value="">Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <select
-            class="input-select form-select"
-            aria-label="Default select example"
-          >
-            <option value="">Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div
-          class="card-member-container mt-5 mt-md-0 pt-0 pt-md-5 px-4 px-md-0 d-flex flex-wrap gap-5 justify-content-center align-items-"
-        >
-          <div class="card-member p-3 d-flex flex-column gap-2">
-            <div class="card-head d-flex align-items-center gap-3">
-              <span class="profile">MA</span>
-              <span>
-                <p class="mb-0 fw-semibold name">Muhammad Igo Annanda</p>
-                <p class="mb-0 fw-medium city">Aceh</p>
-              </span>
-            </div>
-            <div class="expertise-text">
-              <p class="mb-0 expertise">
-                Teknik Perkapalan, Sistem Perkapalan Teknik Kelautan, Energi
-                Laut Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nobis placeat dolor, reprehenderit iste inventore cupiditate
-                labore ipsam doloribus adipisci obcaecati, ut numquam voluptates
-                harum quidem dolorum doloremque. Possimus, error animi.
-              </p>
-            </div>
-            <div class="detail-card align-self-end">
-              <a href="#">
-                <img class="icon" src="./assets/icon-arrow-card.png" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div class="card-member p-3 d-flex flex-column gap-2">
-            <div class="card-head d-flex align-items-center gap-3">
-              <img class="profile" src="./assets/test0user.jpg" alt="" />
-
-              <span>
-                <p class="mb-0 fw-semibold name">Kaisar Akhie</p>
-                <p class="mb-0 fw-medium city">DKI Jakarta</p>
-              </span>
-            </div>
-            <div class="expertise-text">
-              <p class="mb-0 expertise">
-                Bisnis Kelautan dan Perikanan Manajemen Pesisir Terpadu dan Tata
-                Kelola Laut
-              </p>
-            </div>
-            <div class="detail-card align-self-end">
-              <a href="#">
-                <img class="icon" src="./assets/icon-arrow-card.png" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div class="card-member p-3 d-flex flex-column gap-2">
-            <div class="card-head d-flex align-items-center gap-3">
-              <img class="profile" src="./assets/test0user.jpg" alt="" />
-
-              <span>
-                <p class="mb-0 fw-semibold name">Kaisar Akhie</p>
-                <p class="mb-0 fw-medium city">DKI Jakarta</p>
-              </span>
-            </div>
-            <div class="expertise-text">
-              <p class="mb-0 expertise">
-                Bisnis Kelautan dan Perikanan Manajemen Pesisir Terpadu dan Tata
-                Kelola Laut
-              </p>
-            </div>
-            <div class="detail-card align-self-end">
-              <a href="#">
-                <img class="icon" src="./assets/icon-arrow-card.png" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div class="card-member p-3 d-flex flex-column gap-2">
-            <div class="card-head d-flex align-items-center gap-3">
-              <img class="profile" src="./assets/test0user.jpg" alt="" />
-
-              <span>
-                <p class="mb-0 fw-semibold name">Kaisar Akhie</p>
-                <p class="mb-0 fw-medium city">DKI Jakarta</p>
-              </span>
-            </div>
-            <div class="expertise-text">
-              <p class="mb-0 expertise">
-                Bisnis Kelautan dan Perikanan Manajemen Pesisir Terpadu dan Tata
-                Kelola Laut
-              </p>
-            </div>
-            <div class="detail-card align-self-end">
-              <a href="#">
-                <img class="icon" src="./assets/icon-arrow-card.png" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-row justify-content-center align-items-center pagination my-4 container mx-auto overflow-x-hidden">
-          <a href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box"><</a>
-          <a href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box active">1</a>
-          <a href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box">2</a>
-          <a href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box">3</a>
-          <a disabled href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box">
-            ...
-          </a>
-          <a href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box">10</a>
-          <a href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box">11</a>
-          <a href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box">12</a>
-          <a href="#" class="d-flex justify-content-center align-items-center px-2 px-md-3 py-1 bg-white box">></a>
+            <thead>
+              <tr>
+                <th data-sortable="true" data-field="position_title">
+                  Position Title
+                </th>
+                <th data-field="instituition_name">Instituition Name</th>
+                <th data-field="type">Type</th>
+                <th data-field="application_closed_at">Application Closed At</th>
+                <th data-field="poster">Poster</th>
+                <th data-field="action">Action</th>
+              </tr>
+            </thead>
+          </table>
         </div>
       </main>
       <!--END MAIN-->
@@ -341,5 +237,8 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
 
     <script src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
   </body>
 </html>
