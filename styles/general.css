@@ -1,0 +1,268 @@
+:root {
+    --bg-grey-body: #f4f4f4;
+    --bg-primary-blue: #3f497f;
+    --bg-primary-blue-light: #4353aa;
+    --text-color-white: #ffffff;
+    --text-color-unactive: #8c92b2;
+    --text-primary-black: #34364a;
+  }
+  
+  body {
+    background-color: var(--bg-grey-body);
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  textarea:hover, 
+  input:hover, 
+  select:active,
+  select:focus,
+  /* select:hover, */
+  textarea:active, 
+  input:active, 
+  textarea:focus, 
+  input:focus,
+  button:focus,
+  button:active,
+  button:hover,
+  label:focus,
+  .btn:active,
+  .btn.active
+  {
+      outline:0px !important;
+      -webkit-appearance:none;
+      box-shadow: none !important;
+  }
+  
+  h1,p,button{
+    color: var(--text-primary-black);
+  
+  }
+  
+  
+  .body aside {
+    flex: 0.3;
+    /* max-width: 30%; */
+  }
+  .body main {
+    flex: 0.7;
+    /* max-width: 70%; */
+    justify-self: center;
+  }
+  .my-dropdown-toggle::after {
+    content: none;
+  }
+  
+  .my-dropdown-toggle img {
+    max-width: 24px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+  .logo img {
+    max-width: 80%;
+  }
+  .body aside .nav-link {
+    color: var(--text-color-unactive) !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+  }
+  .body aside .nav-link img.icon {
+    max-width: 24px;
+    object-fit: cover;
+  }
+  .body aside li a.active {
+    background-color: var(--bg-primary-blue-light) !important;
+    color: var(--text-color-white) !important;
+    border-radius: 8px !important;
+  }
+  .body aside li a.active img.icon {
+    filter: brightness(0) invert(1);
+  }
+  .body aside .nav-link:hover {
+    color: var(--text-color-white) !important;
+    border-radius: 8px !important;
+    background-color: var(--bg-primary-blue-light) !important;
+  }
+  .body aside .nav-link:hover img.icon {
+    filter: brightness(0) invert(1);
+  }
+  
+  .sidebar {
+    background-color: var(--bg-primary-blue);
+    color: var(--text-color-white);
+    max-height: 100%;
+  }
+  .main nav li {
+    list-style: none;
+  }
+  .main nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+  
+  .dropdown-menu {
+    font-size: 14px;
+  }
+  
+  .dropdown-menu .dropdown-title a {
+    font-weight: 600 !important;
+    text-decoration: none;
+    cursor: default;
+  }
+  .account-btn {
+    background-color: #d5d5d5;
+  }
+  .main {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .main::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .main {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .sidebar-footer img {
+    padding-top: 5rem;
+    padding-right: 5rem;
+    max-width: 350px;
+    /* max-height: 50%; */
+  }
+  
+  .cardImage img.icon {
+    max-width: 32px;
+  }
+  
+  .title-section h2 {
+    font-size: 26px;
+  }
+  
+  .show {
+    display: block;
+    left: 0 !important;
+  }
+  
+  .closeMenu {
+    display: none;
+  }
+  .closeMenu img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  @media (max-width: 576px) {
+    .logo a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+    }
+    .logo img {
+      max-width: 50%;
+      /* background-color: red; */
+    }
+    .sidebar-nav {
+      margin-top: 3rem !important;
+    }
+    .sidebar-nav ul {
+      gap: 2px !important;
+    }
+    .sidebar-nav ul li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .body aside .nav-link {
+      padding: 8px !important;
+      font-size: 14px !important;
+    }
+    .body aside .nav-link img {
+      width: 20px !important;
+    }
+    .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20;
+      right: 30;
+    }
+  
+    .sidebar {
+      /* display: none; */
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      width: 100%;
+      left: -200%;
+      height: 100vh;
+      transition: all 0.7s ease-in-out;
+    }
+    .main {
+      /* background-color: red; */
+      padding-bottom: 4rem !important;
+    }
+    .cardDashboard {
+      height: 10rem;
+    }
+    .cardDashboard .cardInfo {
+      font-size: 16px !important;
+    }
+    .cardDashboard .cardTitle {
+      font-size: 14px !important;
+    }
+    .cardDashboard .cardImage img {
+      width: 23px;
+      height: 23px;
+    }
+    .cardDashboard .cardImage {
+      margin-top: 0 !important;
+    }
+    footer {
+      font-size: 14px;
+    }
+  }
+  
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20;
+      right: 30;
+    }
+  
+    .sidebar {
+      /* display: none; */
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      width: 100%;
+      left: -200%;
+      height: 200vh;
+      transition: all 0.7s ease-in-out;
+    }
+  }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .sidebar {
+      display: flex;
+    }
+  }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+  }
+  
+  /* // X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
+  
+  /* // XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+  }
+  
