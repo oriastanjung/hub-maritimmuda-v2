@@ -3,8 +3,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/logo.png" />
-    <title>Profile - Maritim Muda Hub</title>
+    <link rel="icon" type="image/x-icon" href=".../assets/logo.png" />
+    <title>Educations - Maritim Muda Hub</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -73,8 +73,9 @@
               </li>
               <li class="nav-item p-1">
                 <a
-                  class="nav-link d-flex align-items-center gap-2"
+                  class="nav-link d-flex align-items-center gap-2 active"
                   href="../scholarships.html"
+                  aria-current="page"
                   ><img
                     class="icon"
                     src="../assets/icon-scholarships.svg"
@@ -180,9 +181,7 @@
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="/profile/general.html"
-                    >Profile</a
-                  >
+                  <a class="dropdown-item" href="/profile/general.html">Profile</a>
                   <a class="dropdown-item" href="/login.html">Logout</a>
                 </li>
               </ul>
@@ -193,113 +192,15 @@
           <h2 class="fw-bold fs-4 fs-md-2">Profile</h2>
         </div>
         <div>
-          <div
-            class="profile-tab d-flex justify-content-around align-items-center"
-          >
-            <a
-              class="fw-medium py-2 px-1 text-center mb-0 active"
-              href="./general.html"
-              >General</a
-            >
-            <a
-              class="fw-medium py-2 px-1 text-center mb-0"
-              href="./educations.html"
-              >Educations</a
-            >
-            <a
-              class="fw-medium py-2 px-1 text-center mb-0"
-              href="./general.html"
-              >Work Experiences</a
-            >
-            <a
-              class="fw-medium py-2 px-1 text-center mb-0"
-              href="./general.html"
-              >Organizations</a
-            >
-            <a
-              class="fw-medium py-2 px-1 text-center mb-0"
-              href="./general.html"
-              >Achievements</a
-            >
-            <a
-              class="fw-medium py-2 px-1 text-center mb-0"
-              href="./general.html"
-              >Publications</a
-            >
-            <a
-              class="fw-medium py-2 px-1 text-center mb-0"
-              href="./general.html"
-              >Social Activities</a
-            >
-            <a
-              class="fw-medium py-2 px-1 text-center mb-0"
-              href="./general.html"
-              >Researches</a
-            >
-          </div>
-          <div class="bg-white p-4 isi d-flex flex-column gap-5">
-            <!-- input download kta -->
-            <div class="container d-flex align-items-center">
-              <div class="rounded border ktaCard">
-                <img
-                  class="img-fluid border rounded"
-                  src="../assets/default-kta.png"
-                  alt=""
-                />
-              </div>
-              <div class="ms-5">
-                <button class="btn buttonDownload">Download Member Card</button>
-              </div>
-            </div>
-            <!-- input upload profile photo -->
-            <div class="container d-flex align-items-center">
-              <div class="mx-3">
-                <div
-                  class="rounded border d-flex profilePhoto justify-content-center align-items-center me-3"
-                >
-                  <h1>OT</h1>
-                  <!-- <img
-                    class="img-fluid border rounded"
-                    src="https://hub.maritimmuda.id/media/114cbf5aba5c40b4a7466b92b28a3a11/c/WhatsApp-Image-2023-01-13-at-9.06.25-PM-5ae0c1c8a5260bc7b6648f6fbd115c35.jpg"
-                    alt=""
-                  /> -->
-                </div>
-              </div>
-              <form class="d-flex flex-column formInputProfile ms-5">
-                <label for="">Photo</label>
-                <input type="file" />
-                <p class="mb-0">Photograph in ratio 3:4</p>
-              </form>
-            </div>
-            <!-- input Identity card ktp -->
-            <div class="container d-flex align-items-center">
-              <div
-                class="rounded border ktaCard d-flex justify-content-center align-items-center"
-              >
-                <!-- <p class="text-center mb-0">No Identity Card</p> -->
-                <img
-                  class="img-fluid border rounded"
-                  src="https://hub.maritimmuda.id/media/d8c46d8c4d1f42028431390325615ca1/c/ktp-orias-ac3d63945fcaf0510f2219776bafd385.jpg"
-                  alt=""
-                />
-              </div>
-              <form class="d-flex flex-column formInputProfile ms-5 w-50">
-                <label for="">Identity Card</label>
-                <input type="file" />
-                <p class="mb-0">
-                  Identity card is needed to verify member’s data. System
-                  automatically apply a watermark to prevent identity card
-                  abuse.
-                  <a
-                    href="https://www.instagram.com/p/CTPPBLLhtVr/"
-                    target="_blank"
-                  >
-                    Read more about this concept on this post</a
-                  >
-                  . <strong>Max 50KB</strong>
-                </p>
-              </form>
-            </div>
+          <div class="profile-tab">
+            <a class="fw-medium py-2 px-1 text-center mb-0 " href="./general.html">General</a>
+            <a class="fw-medium py-2 px-1 text-center mb-0 active" href="./educations.html">Educations</a>
+            <a class="fw-medium py-2 px-1 text-center mb-0" href="./general.html">Work Experiences</a>
+            <a class="fw-medium py-2 px-1 text-center mb-0" href="./general.html">Organizations</a>
+            <a class="fw-medium py-2 px-1 text-center mb-0" href="./general.html">Achievements</a>
+            <a class="fw-medium py-2 px-1 text-center mb-0" href="./general.html">Publications</a>
+            <a class="fw-medium py-2 px-1 text-center mb-0" href="./general.html">Social Activities</a>
+            <a class="fw-medium py-2 px-1 text-center mb-0" href="./general.html">Researches</a>
           </div>
         </div>
       </main>
